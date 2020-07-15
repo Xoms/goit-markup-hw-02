@@ -3,31 +3,31 @@ Raleway bold*/
 /*Logo*/
 @font-face {
   font-family: "Raleway-Bold";
-  src: url(/css/fonts/Raleway-Bold.ttf);
+  src: url(./fonts/Raleway-Bold.ttf);
 }
 
 /*headers*/
 @font-face {
   font-family: "Roboto-Bold";
-  src: url(/css/fonts/Roboto-Bold.ttf);
+  src: url(./fonts/Roboto-Bold.ttf);
 }
 
 /*hero header*/
 @font-face {
   font-family: "Roboto-Black";
-  src: url(/css/fonts/Roboto-Black.ttf);
+  src: url(./fonts/Roboto-Black.ttf);
 }
 
 /*nav links*/
 @font-face {
   font-family: "Roboto-Medium";
-  src: url(/css/fonts/Roboto-Medium.ttf);
+  src: url(./fonts/Roboto-Medium.ttf);
 }
 
 /*paragraphs*/
 @font-face {
   font-family: "Roboto-Regular";
-  src: url(/css/fonts/Roboto-Regular.ttf);
+  src: url(./fonts/Roboto-Regular.ttf);
 }
 
 body {
@@ -125,7 +125,7 @@ ul {
 .hero {
   width: 480px;
   height: 400px;
-  background-image: url(/images/header/header-img.jpg);
+  background-image: url(../images/header/header-img.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
