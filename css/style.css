@@ -326,7 +326,7 @@ a:hover {
   border: none;
 }
 
-.filters__btn:hover {
+.filters__btn:hover, .filters__btn:focus {
   cursor: pointer;
   background-color: var(--accent);
   color: var(--light-text);
@@ -337,7 +337,7 @@ a:hover {
   border: 1px solid var(--item-border);
 }
 
-.projects__item:hover {
+.projects__item:hover, .projects__item:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
