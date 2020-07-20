@@ -46,6 +46,7 @@ Raleway bold*/
   --item-border: #EEEEEE;
 }
 
+/*common*/
 body {
   color: var(--main-text);
   background-color: var(--main-bg);
@@ -63,11 +64,6 @@ a:hover {
   cursor: pointer;
 }
 
-.mobile {
-  display: none;
-}
-
-/*common*/
 .list {
   margin: 0;
   padding: 0;
@@ -86,6 +82,14 @@ a:hover {
   background-color: var(--accent);
 }
 
+.link {
+  font-family: "Roboto-Medium", sans-serif;
+}
+
+.link:hover, .link:focus {
+  color: var(--accent);
+}
+
 .logo {
   font-size: 26px;
   line-height: 31px;
@@ -96,6 +100,21 @@ a:hover {
   color: var(--accent);
 }
 
+.btn {
+  font-size: 16px;
+}
+
+.btn:hover, .btn:focus {
+  cursor: pointer;
+}
+
+.main-btn {
+  color: var(--light-text);
+  background-color: var(--accent);
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 42px;
@@ -103,8 +122,9 @@ a:hover {
 }
 
 .title--hidden {
-  height: 0px;
-  margin: 0px;
+  height: 0;
+  widows: 0;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -115,38 +135,17 @@ a:hover {
 
 /*HEADER*/
 /*******Nav******/
-.nav {
-  border-bottom: solid 1px var(--nav-underline);
-}
-
 .nav-list__item {
   margin: 40px auto;
   text-align: center;
 }
 
 .nav__link {
-  font-family: "Roboto-Medium", sans-serif;
   font-size: 18px;
-}
-
-.nav__link:hover, .nav__link:focus {
-  color: var(--accent);
 }
 
 .nav__link--active {
   color: var(--accent);
-  position: relative;
-}
-
-.nav__link--active::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent);
-  border-radius: 2px;
-  top: 24px;
-  left: 0;
 }
 
 .nav-contacts__item {
@@ -155,13 +154,8 @@ a:hover {
 }
 
 .nav-contacts__link {
-  font-family: "Roboto-Medium", sans-serif;
   font-size: 14px;
   color: var(--secondary-text);
-}
-
-.nav-contacts__link:hover, .nav-contacts__link:focus {
-  color: var(--accent);
 }
 
 /*HEADER END*/
@@ -203,9 +197,6 @@ a:hover {
 
 .hero__button {
   margin: auto;
-  font-size: 16px;
-  color: var(--light-text);
-  background-color: var(--accent);
   padding: 10px 32px;
   position: absolute;
   border: none;
@@ -326,7 +317,7 @@ a:hover {
   border: none;
 }
 
-.filters__btn:hover, .filters__btn:focus {
+.filters__btn:hover, .filters__btn:focus, .filters__btn--active {
   cursor: pointer;
   background-color: var(--accent);
   color: var(--light-text);
